@@ -1,0 +1,68 @@
+.navContainer {
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 3px 0px 6px 0px rgba(200, 195, 195, 0.75);
+
+  .logo > h2 {
+    padding: 10px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: -30px;
+  }
+  .wrapper {
+    padding: 10px;
+    z-index: 1;
+  }
+  .wrapper > ul {
+    margin-top: 20px;
+    text-align: left;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: bold;
+    gap: 20px;
+  }
+  .wrapper > ul > li {
+    list-style: none;
+    font-size: 20px;
+    text-decoration: none;
+    opacity: 0.6;
+  }
+  .wrapper > ul > li > a {
+    color: inherit;
+  }
+  .wrapper > ul > li > a:hover {
+    color: darkgoldenrod;
+    font-size: 22px;
+    transition: 0.3s;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navContainer {
+    width: 70px;
+  }
+  .logo > h2 {
+    opacity: 0;
+  }
+  .logo {
+    background: url("../../public/logo.png");
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    margin: 10px;
+  }
+  .wrapper > ul {
+    gap: 5px;
+  }
+  .wrapper > ul > li:hover {
+    color: red;
+  }
+  .wrapper > ul > li > a {
+    opacity: 0;
+  }
+}
