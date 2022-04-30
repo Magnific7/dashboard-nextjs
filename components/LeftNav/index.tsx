@@ -1,12 +1,16 @@
 import React from "react";
 import styles from "./index.module.scss";
 import { Icon } from "semantic-ui-react";
-
+import logo from "./../../public/quick.png";
+import Image from "next/image";
 const LeftNav = () => {
   return (
     <div className={styles.navContainer}>
       <div className={styles.logo}>
-        <h2>StreamLine</h2>
+        <Image src={logo} alt="logo" className={styles.logo__image} />
+      </div>
+      <div className={styles.create}>
+        <span>+ create new</span>
       </div>
       <div className={styles.wrapper}>
         <ul>
