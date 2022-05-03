@@ -4,7 +4,6 @@ import Image from "next/image";
 import LeftNav from "../components/LeftNav";
 import styles from "../styles/Home.module.css";
 import "semantic-ui-css/semantic.min.css";
-import Header from "../components/Header";
 import Content from "../components/Content";
 
 const Home: NextPage = () => {
@@ -17,7 +16,6 @@ const Home: NextPage = () => {
       </Head>
 
       <LeftNav />
-      <Header />
       <Content />
     </div>
   );

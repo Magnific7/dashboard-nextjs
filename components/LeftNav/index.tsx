@@ -12,6 +12,7 @@ const LeftNav = () => {
       </div>
       <div className={styles.create}>
         <span>+ create new</span>
+        <Icon className={styles.create__icon} name="add" />
       </div>
       <div className={styles.wrapper}>
         <ul>

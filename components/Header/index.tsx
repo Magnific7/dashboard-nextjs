@@ -1,9 +1,8 @@
 import React from "react";
 import styles from "./index.module.scss";
 import Image from "next/image";
-import image from "../../public/watermark.png";
-import { Input } from "semantic-ui-react";
-import logo from "./../../public/orrchi.png";
+import { Icon, Input } from "semantic-ui-react";
+import logo from "./../../public/logohere.png";
 
 const Header = () => {
   return (
@@ -21,9 +20,10 @@ const Header = () => {
             <Input icon="search green" placeholder="Search ..." />
           </div>
           <div className={styles.Header__wrapper__right__profile}>
-            <Image
-              src={image}
-              alt="profile"
+            <Icon
+              name="alarm"
+              alt="notifications"
+              size="large"
               className={styles.Header__wrapper__right__profile_image}
             />
           </div>

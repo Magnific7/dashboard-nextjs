@@ -1,6 +1,6 @@
 .navContainer {
   position: fixed;
-  width: 200px;
+  width: 15 vw;
   height: 100%;
   background-color: #fff;
   box-shadow: 3px 0px 6px 0px rgba(231, 227, 227, 0.75);
@@ -18,6 +18,9 @@
     text-transform: capitalize;
     background-color: rgb(143, 212, 175);
     padding: 15px 25px;
+  }
+  .create__icon {
+    display: none;
   }
   .wrapper {
     margin-top: 50px;
@@ -80,13 +83,27 @@
     padding: 10px;
     margin: 10px;
   }
+  .create > span {
+    display: none;
+  }
+
   .wrapper > ul {
     gap: 5px;
   }
-  .wrapper > ul > li:hover {
-    color: rgb(0, 0, 0);
+  .wrapper :hover {
   }
+
   .wrapper > ul > li > a {
     opacity: 0;
+  }
+  .profile {
+    &__image {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+    }
+    span {
+      opacity: 0;
+    }
   }
 }
