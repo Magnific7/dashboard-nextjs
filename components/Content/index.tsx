@@ -1,92 +1,62 @@
-import React from "react";
+import React, { FC } from "react";
 import styles from "./index.module.scss";
 import "chart.js/auto";
-import { Bubble, Line, Doughnut } from "react-chartjs-2";
+import BarComponent from "./../charts/BarComponent";
+import DoughnutComponent from "./../charts/Doughnut";
+import BarDescription from "./../BarDescription";
+import ProgressBar from "./../ProgressBar";
+import Header from "../Header";
 
-const Content = () => {
-  const data = {
-    labels: [
-      "January",
-      "February",
-      "March",
-      "April",
-      "May",
-      "June",
-      "July",
-      "August",
-      "September",
-      "October",
-      "November",
-      "December",
-    ],
-    datasets: [
-      {
-        label: "Sales/ month",
-        fill: true,
-        lineTension: 0.1,
-        backgroundColor: "rgba(75,192,192,0.4)",
-        borderColor: "rgba(75,192,192,1)",
-        borderCapStyle: "butt",
-        borderDash: [],
-        borderDashOffset: 0.0,
-        borderJoinStyle: "miter",
-        pointBorderColor: "rgba(75,192,192,1)",
-        pointBackgroundColor: "#fff",
-        pointBorderWidth: 0,
-        pointHoverRadius: 0,
-        pointHoverBackgroundColor: "rgba(75,192,192,1)",
-        pointHoverBorderColor: "rgba(220,220,220,1)",
-        pointHoverBorderWidth: 0,
-        pointRadius: 0,
-        pointHitRadius: 0,
-        data: [65, 59, 80, 81, 56, 55, 40, 57, 40, 48, 59, 62],
+export interface ContentProps {
+  children?: JSX.Element | JSX.Element[];
+}
+
+const Content: FC<ContentProps> = (children, li) => {
+  const options = {
+    plugins: {
+      legend: {
+        display: false,
       },
-    ],
+    },
   };
   const data1 = {
-    labels: ["Organic", "Social Media", "Websites"],
+    labels: ["Organic", "Social Media", "Websites", "sensation"],
     datasets: [
       {
-        data: [300, 50, 100],
-        backgroundColor: ["#FF6384", "#36A2EB", "#FFCE56"],
-        hoverBackgroundColor: ["#FF6384", "#36A2EB", "#FFCE56"],
+        data: [500.0, 50.0, 100.0, 200.0],
+        backgroundColor: [
+          "rgba(75,192,192,0.4)",
+          "rgba(75,192,192,1)",
+          "rgba(220,220,220,1)",
+          "rgb(20, 99, 89)",
+        ],
+        hoverBackgroundColor: [
+          "rgba(75,192,192,0.4)",
+          "rgba(75,192,192,1)",
+          "rgba(220,220,220,1)",
+          "rgb(20, 99, 89)",
+        ],
       },
     ],
   };
 
   return (
     <div className={styles.Content}>
+      <Header />
+
       <div className={styles.Content__wrapper}>
-        <div className={styles.Content__wrapper__tabs}>
-          <div className={styles.Content__wrapper__tabs__categories}>
-            <h2>Companies</h2>
-          </div>
-        </div>
-        <div className={styles.Content__wrapper__tabs}>
-          <div className={styles.Content__wrapper__tabs__categories}>
-            <h2>Customers</h2>
-          </div>
-        </div>{" "}
-        <div className={styles.Content__wrapper__tabs}>
-          <div className={styles.Content__wrapper__tabs__categories}>
-            <h2>Users</h2>
-          </div>
-        </div>{" "}
-        <div className={styles.Content__wrapper__tabs}>
-          <div className={styles.Content__wrapper__tabs__categories}>
-            <h2>Project</h2>
-          </div>
-        </div>
+        <BarDescription />
       </div>
 
       <div className={styles.charts}>
-        <div className={styles.charts__bar}>
-          <h2>Sales</h2>
-          <Line data={data} width={400} height={400} />
-        </div>
-        <div className={styles.charts__circle}>
-          <h2>Customers arrived </h2>
-          <Doughnut data={data1} width={400} height={400} />
+        <BarComponent />
+        <div className={styles.charts__sales}>
+          <div className={styles.charts__sales__progressbar}>
+            <ProgressBar />
+          </div>
+          <div className={styles.charts__sales__doughnut}>
+            <DoughnutComponent />
+          </div>
         </div>
       </div>
     </div>

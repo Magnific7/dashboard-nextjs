@@ -1,0 +1,25 @@
+.doughnut_container {
+  display: flex;
+  &__leftside {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    &__data {
+      display: flex;
+      h2 {
+        margin-top: 0;
+      }
+      p {
+        margin: 30px -50px;
+        color: #718096;
+        font-size: large;
+      }
+      &__dot {
+        margin: 10px 10px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+      }
+    }
+  }
+}

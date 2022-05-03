@@ -1,0 +1,22 @@
+.charts__sales__expenses {
+  &__amount {
+    display: flex;
+    width: 400px;
+    &__left {
+      align-self: flex-start;
+    }
+  }
+  &__progress {
+    width: 400px;
+    height: 40px;
+    background: rgb(246, 246, 246);
+    border-radius: 15px;
+    &__bar {
+      background: rgb(153, 201, 195);
+      height: 100%;
+      width: 20%;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+  }
+}
