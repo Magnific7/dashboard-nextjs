@@ -9,7 +9,6 @@ import {
   Legend,
   Bar,
   BarChart,
-  ResponsiveContainer,
 } from "recharts";
 
 const data = [
@@ -92,7 +91,6 @@ const BarComponent = (children, li) => {
     <div className={styles.bar_container}>
       <div className={styles.bar_container}>
         <div className={styles.bar_container__graph}>
-          {/* <ResponsiveContainer> */}
           <BarChart
             width={1000}
             height={250}
@@ -112,7 +110,6 @@ const BarComponent = (children, li) => {
             <Bar dataKey="pv" fill="rgb(83, 182, 131)" />
             <Bar dataKey="uv" fill="rgb(202, 238, 240)" />
           </BarChart>
-          {/* </ResponsiveContainer> */}
         </div>
       </div>
     </div>

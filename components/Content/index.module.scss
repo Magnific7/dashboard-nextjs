@@ -2,17 +2,13 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  // margin: 15px 100px 100px 200px;
   margin: 0 0 0 20%;
   width: 100%;
   overflow: auto;
 
   &__wrapper {
-    // padding: 10px 32px 32px 32px;
     margin: 10px 0 32px 0;
-    // gap: 40px;
     width: 100%;
-    // overflow-x: none;
   }
   .charts {
     display: flex;
@@ -25,7 +21,6 @@
       &__progressbar {
         display: flex;
         flex-direction: column;
-        // margin-top: 50px;
       }
     }
   }
@@ -35,8 +30,6 @@
   .Content {
     margin-left: 70px;
     overflow-x: auto;
-    // display: flex;
-    // flex-direction: column;
 
     &__wrapper {
       display: grid;
@@ -49,7 +42,6 @@
       }
     }
     .charts {
-      // display: flexbox;
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
