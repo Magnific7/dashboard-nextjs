@@ -4,7 +4,7 @@ import styles from "./index.module.scss";
 const ProgressBar = () => {
   return (
     <div className={styles.charts__sales__expenses}>
-      <h3>Invoces</h3>
+      <h3>Invoices</h3>
       <p>
         <b>$3,500.00 Unpaid</b> Last 365 Days
       </p>
