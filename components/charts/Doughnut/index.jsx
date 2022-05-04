@@ -50,7 +50,7 @@ const DoughnutComponent = (children, li) => {
               backgroundColor: `${data1.datasets[0].backgroundColor[0]}`,
             }}
           ></div>
-          <h2>${data1.datasets[0].data[0]}</h2>
+          <h2>${data1.datasets[0].data[0]}.000</h2>
           <p>{data1.labels[0]}</p>
         </div>
         <div className={styles.doughnut_container__leftside__data}>
@@ -60,7 +60,7 @@ const DoughnutComponent = (children, li) => {
               backgroundColor: `${data1.datasets[0].backgroundColor[1]}`,
             }}
           ></div>
-          <h2>${data1.datasets[0].data[1]}</h2>
+          <h2>${data1.datasets[0].data[1]}.000</h2>
           <p>{data1.labels[1]}</p>
         </div>
         <div className={styles.doughnut_container__leftside__data}>
@@ -70,7 +70,7 @@ const DoughnutComponent = (children, li) => {
               backgroundColor: `${data1.datasets[0].backgroundColor[2]}`,
             }}
           ></div>
-          <h2>${data1.datasets[0].data[2]}</h2>
+          <h2>${data1.datasets[0].data[2]}.000</h2>
           <p>{data1.labels[2]}</p>
         </div>
         <div className={styles.doughnut_container__leftside__data}>
@@ -80,7 +80,7 @@ const DoughnutComponent = (children, li) => {
               backgroundColor: `${data1.datasets[0].backgroundColor[3]}`,
             }}
           ></div>
-          <h2>${data1.datasets[0].data[3]}</h2>
+          <h2>${data1.datasets[0].data[3]}.000</h2>
           <p>{data1.labels[3]}</p>
         </div>
       </div>
