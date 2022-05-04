@@ -10,3 +10,11 @@
     overflow-x: scroll;
   }
 }
+@media only screen and (max-width: 480px) {
+  .bar_container {
+    margin-left: 10px;
+    width: 500px !important;
+    height: 300px;
+    overflow-x: scroll;
+  }
+}
