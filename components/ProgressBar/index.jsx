@@ -11,11 +11,11 @@ const ProgressBar = () => {
       <div className={styles.charts__sales__expenses__amount}>
         <div className={styles.charts__sales__expenses__amount__left}>
           <h1>$3,500.00</h1>
-          <h4>Overdue</h4>
+          <span>Overdue</span>
         </div>
         <div className={styles.charts__sales__expenses__amount__right}>
           <h1>$3,500.00</h1>
-          <h4>Overdue</h4>
+          <span>Not due yet</span>
         </div>
       </div>
       <div className={styles.charts__sales__expenses__progress}>
@@ -27,11 +27,11 @@ const ProgressBar = () => {
       <div className={styles.charts__sales__expenses__amount}>
         <div className={styles.charts__sales__expenses__amount__left}>
           <h1>$3,500.00</h1>
-          <h4>Overdue</h4>
+          <span>Not deposited</span>
         </div>
         <div className={styles.charts__sales__expenses__amount__right}>
           <h1>$3,500.00</h1>
-          <h4>Overdue</h4>
+          <span>Deposited</span>
         </div>
       </div>
     </div>

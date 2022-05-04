@@ -4,6 +4,17 @@
     width: 400px;
     &__left {
       align-self: flex-start;
+      span {
+        color: grey;
+        font-weight: 500;
+      }
+    }
+    &__right {
+      margin-left: 120px;
+      span {
+        color: grey;
+        font-weight: 500;
+      }
     }
   }
   &__progress {
