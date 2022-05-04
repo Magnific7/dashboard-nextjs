@@ -29,10 +29,7 @@ const LeftNav = () => {
             <a href="#">Expenses</a>
             <Icon name="angle right" color="grey" />
           </li>
-          <li>
-            <a href="#">Sales</a>
-            <Icon name="angle right" color="grey" />
-          </li>
+
           <li>
             <a href="#">Reports</a>
             <Icon name="angle right" color="grey" />
