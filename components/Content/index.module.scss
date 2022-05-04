@@ -4,7 +4,6 @@
   align-items: flex-start;
   margin: 0 0 0 20%;
   width: 100%;
-  overflow: auto;
 
   &__wrapper {
     margin: 10px 0px 32px 160px;
@@ -29,7 +28,6 @@
 @media only screen and (max-width: 768px) {
   .Content {
     margin-left: 70px;
-    overflow-x: auto;
 
     &__wrapper {
       display: grid;
@@ -47,14 +45,8 @@
       align-items: center;
       margin-left: auto;
 
-      &__sales > h2 {
-        text-align: center;
-        font-size: 22px;
-        margin-bottom: 20px;
-      }
-
       &__sales {
-        margin-top: 50px;
+        margin: 100px 10px 10px 0px;
         display: flex;
         flex-direction: column;
         width: 300px;

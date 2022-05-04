@@ -1,0 +1,12 @@
+.bar_container {
+  width: 800px;
+  height: 250px;
+}
+@media only screen and (max-width: 768px) {
+  .bar_container {
+    margin-left: -300px;
+    width: 500px !important;
+    height: 300px;
+    overflow-x: scroll;
+  }
+}
