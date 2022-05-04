@@ -38,7 +38,6 @@ const DoughnutComponent = (children, li) => {
         <h3 className={styles.sub_title}>Expenses</h3>
         <h1 className={styles.amount}>$3,500.00</h1>
         <h4 className={styles.last_month}>last Month</h4>
-        <h4></h4>
         <div className={styles.doughnut_container__right__doughbut}>
           <Doughnut data={data1} width={200} height={200} options={options} />
         </div>
@@ -63,7 +62,7 @@ const DoughnutComponent = (children, li) => {
           ></div>
           <h2>${data1.datasets[0].data[1]}</h2>
           <p>{data1.labels[1]}</p>
-        </div>{" "}
+        </div>
         <div className={styles.doughnut_container__leftside__data}>
           <div
             className={styles.doughnut_container__leftside__data__dot}
@@ -73,7 +72,7 @@ const DoughnutComponent = (children, li) => {
           ></div>
           <h2>${data1.datasets[0].data[2]}</h2>
           <p>{data1.labels[2]}</p>
-        </div>{" "}
+        </div>
         <div className={styles.doughnut_container__leftside__data}>
           <div
             className={styles.doughnut_container__leftside__data__dot}
