@@ -40,7 +40,6 @@
     display: flex;
     list-style: none;
     margin: 10px 0;
-    // font-size: 20px;
     text-decoration: none;
     opacity: 0.6;
     font-size: medium;
@@ -53,7 +52,6 @@
   }
   .wrapper > ul > li > a:hover {
     color: black;
-    // font-size: large;
     transition: 0.3s;
   }
 }
@@ -69,10 +67,8 @@
     align-items: center;
     width: 80px;
     height: 80px;
-    // border-radius: 50%;
   }
   span {
-    // margin-top: 30px;
     flex: 1;
     font-size: 17px;
     font-weight: bold;
@@ -99,8 +95,6 @@
 
   .wrapper > ul {
     gap: 5px;
-  }
-  .wrapper :hover {
   }
 
   .wrapper > ul > li > a {
