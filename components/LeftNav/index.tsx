@@ -18,29 +18,33 @@ const LeftNav = () => {
       <div className={styles.wrapper}>
         <ul>
           <li>
+            <Icon name="setting" />
             <a href="#">Dashboard</a>
-            <Icon name="angle right" color="grey" />
           </li>
           <li>
+            <Icon name="book" />
             <a href="#">Transactions</a>
-            <Icon name="angle right" color="grey" />
           </li>
           <li>
+            <Icon name="world" />
             <a href="#">Expenses</a>
-            <Icon name="angle right" color="grey" />
           </li>
 
           <li>
+            <Icon name="setting" />
             <a href="#">Reports</a>
-            <Icon name="angle right" color="grey" />
           </li>
           <li>
+            <Icon name="help" />
             <a href="#">Help</a>
-            <Icon name="angle right" color="grey" />
           </li>
           <li>
+            <Icon name="tag" />
+            <a href="#">Projects</a>
+          </li>
+          <li>
+            <Icon name="log out" />
             <a href="#">Apps</a>
-            <Icon name="angle right" color="grey" />
           </li>
         </ul>
       </div>
@@ -54,7 +58,7 @@ const LeftNav = () => {
           />
         </div>
         <span>James Connor</span>
-        <div>
+        <div className={styles.icon}>
           <Icon name="angle right" size="big" color="green" />
         </div>
       </div>
