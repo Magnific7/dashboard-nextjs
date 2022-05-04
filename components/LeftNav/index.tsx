@@ -57,7 +57,9 @@ const LeftNav = () => {
           />
         </div>
         <span>James Connor</span>
-        <Icon name="angle right" size="big" color="green" />
+        <div>
+          <Icon name="angle right" size="big" color="green" />
+        </div>
       </div>
     </div>
   );
