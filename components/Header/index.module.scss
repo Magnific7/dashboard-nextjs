@@ -44,15 +44,15 @@
 @media only screen and (max-width: 768px) {
   .Header {
     width: 90wv;
-    margin-left: 70px;
     &__wrapper {
       margin-left: 80px;
-
+      &__title {
+        margin: 10px 0px 0px -100px;
+      }
       &__right {
         display: flex;
-        margin: 15px 60px 0px 60px;
-        &__search {
-        }
+        margin: 15px 10px 0px 80px;
+
         &__profile {
           margin-left: 20px;
           right: 20px;
