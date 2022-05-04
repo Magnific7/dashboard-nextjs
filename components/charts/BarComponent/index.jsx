@@ -86,12 +86,11 @@ const data = [
   },
 ];
 const BarComponent = (children, li) => {
-  // console.log("SCRN WIDRH", screen.width);
   return (
     <div className={styles.bar_container}>
       <div className={styles.bar_container__graph}>
         <BarChart
-          width={1000}
+          width={930}
           height={250}
           data={data}
           margin={{
