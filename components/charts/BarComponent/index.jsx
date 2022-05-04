@@ -109,8 +109,8 @@ const BarComponent = (children, li) => {
             <YAxis />
             <Tooltip />
             <Legend />
-            <Bar dataKey="pv" fill="rgb(143, 212, 175)" />
-            <Bar dataKey="uv" fill="rgb(200, 243, 220)" />
+            <Bar dataKey="pv" fill="rgb(83, 182, 131)" />
+            <Bar dataKey="uv" fill="rgb(202, 238, 240)" />
           </BarChart>
           {/* </ResponsiveContainer> */}
         </div>

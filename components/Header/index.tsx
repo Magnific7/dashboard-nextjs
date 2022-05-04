@@ -10,7 +10,9 @@ const Header = () => {
       <div className={styles.Header__wrapper}>
         <div className={styles.Header__wrapper__title}>
           <Image
-            src={logo}
+            src={"/logohere.png"}
+            width={200}
+            height={50}
             alt="logo"
             className={styles.Header__wrapper__title__logo}
           />

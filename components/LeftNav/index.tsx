@@ -4,6 +4,7 @@ import { Icon } from "semantic-ui-react";
 import logo from "./../../public/quick.png";
 import Image from "next/image";
 import profile from "./../../public/profileout.png";
+
 const LeftNav = () => {
   return (
     <div className={styles.navContainer}>
@@ -17,46 +18,46 @@ const LeftNav = () => {
       <div className={styles.wrapper}>
         <ul>
           <li>
-            <Icon name="setting" />
             <a href="#">Dashboard</a>
+            <Icon name="angle right" color="grey" />
           </li>
           <li>
-            <Icon name="world" />
-
             <a href="#">Transactions</a>
-          </li>{" "}
+            <Icon name="angle right" color="grey" />
+          </li>
           <li>
-            <Icon name="book" />
-
             <a href="#">Expenses</a>
-          </li>{" "}
+            <Icon name="angle right" color="grey" />
+          </li>
           <li>
-            <Icon name="favorite" />
-
             <a href="#">Sales</a>
-          </li>{" "}
+            <Icon name="angle right" color="grey" />
+          </li>
           <li>
-            <Icon name="setting" />
-
             <a href="#">Reports</a>
+            <Icon name="angle right" color="grey" />
           </li>
           <li>
-            <Icon name="log out" />
-
             <a href="#">Help</a>
+            <Icon name="angle right" color="grey" />
           </li>
           <li>
-            <Icon name="log out" />
-
             <a href="#">Apps</a>
+            <Icon name="angle right" color="grey" />
           </li>
         </ul>
       </div>
       <div className={styles.profile}>
         <div className={styles.profile__image}>
-          <Image src={profile} alt="profile" />
+          <Image
+            src={"/profileout.png"}
+            width={100}
+            height={100}
+            alt="profile"
+          />
         </div>
         <span>James Connor</span>
+        <Icon name="angle right" size="big" color="green" />
       </div>
     </div>
   );

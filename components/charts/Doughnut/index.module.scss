@@ -1,9 +1,27 @@
 .doughnut_container {
   display: flex;
+
+  &__right {
+    h1,
+    h2,
+    h3,
+    h4 {
+      margin: 0;
+    }
+    .sub_title {
+      margin-bottom: 15px;
+    }
+    .last_month {
+      color: grey;
+      font-weight: 500;
+      margin-top: 10px;
+    }
+  }
   &__leftside {
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
+    // margin-top: 50px;
+    margin-left: 20px;
     &__data {
       display: flex;
       h2 {

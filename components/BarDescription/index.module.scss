@@ -1,6 +1,5 @@
 .Content__wrapper__tabs {
   display: flex;
-  //   margin-left: 100px;
   justify-content: space-evenly;
   margin-left: 30px;
 
@@ -18,6 +17,9 @@
     p {
       color: #718096;
     }
+    h1 {
+      font-size: 40px;
+    }
 
     flex-basis: 50%;
   }
@@ -31,19 +33,19 @@
       &__one {
         text-align: center;
         padding: 15px 25px;
-        border: 1px solid rgb(203, 240, 240);
-        border-radius: 10px;
+        border: 1px solid rgb(83, 182, 131);
+        border-radius: 10px 0 0 10px;
       }
       &__two {
         background: rgb(227, 226, 226);
         text-align: center;
         padding: 15px 25px;
-        border-radius: 10px;
+        border-radius: 0 10px 10px 0;
       }
     }
     &__in {
       display: flex;
-      gap: 4px;
+      // gap: 4px;
     }
     &__dot {
       display: flex;
