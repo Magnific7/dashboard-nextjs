@@ -1,6 +1,6 @@
 .doughnut_container {
   display: flex;
-
+  margin-right: -150px;
   &__right {
     h1,
     h2,
@@ -43,6 +43,6 @@
 }
 @media only screen and (max-width: 768px) {
   .doughnut_container {
-    margin: 0px 20px 50px -260px;
+    margin: 0px 20px 50px -200px;
   }
 }
