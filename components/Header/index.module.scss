@@ -2,12 +2,13 @@
   display: flex;
   flex-wrap: wrap;
   height: 70px;
+  width: 100%;
   background-color: white;
   position: relative;
-  margin-top: 20px;
   &__wrapper {
     display: flex;
     padding-left: 40px;
+    align-items: center;
     @media (max-width: 768px) {
       margin-left: 300px;
     }
@@ -50,7 +51,7 @@
       // margin-top: -20px 10px 0px 20px;
       &__logo {
         // img {
-        margin-top: 5px;
+        // margin-top: 5px;
         width: 60px !important;
         height: 50px;
         // }

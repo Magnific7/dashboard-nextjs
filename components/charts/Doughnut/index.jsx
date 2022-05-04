@@ -35,12 +35,12 @@ const DoughnutComponent = (children, li) => {
   return (
     <div className={styles.doughnut_container}>
       <div className={styles.doughnut_container__right}>
-        <h3>Expenses</h3>
-        <h1>$3,500.00</h1>
-        <h4>last Month</h4>
+        <h3 className={styles.sub_title}>Expenses</h3>
+        <h1 className={styles.amount}>$3,500.00</h1>
+        <h4 className={styles.last_month}>last Month</h4>
         <h4></h4>
         <div className={styles.doughnut_container__right__doughbut}>
-          <Doughnut data={data1} width={300} height={300} options={options} />
+          <Doughnut data={data1} width={200} height={200} options={options} />
         </div>
       </div>
       <div className={styles.doughnut_container__leftside}>
