@@ -1,6 +1,13 @@
 .bar_container {
   width: 800px;
   height: 250px;
+
+  &__graph {
+    &_chart {
+      position: relative;
+      width: 100% !important;
+    }
+  }
 }
 @media only screen and (max-width: 768px) {
   .bar_container {

@@ -2,20 +2,25 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 0 0 0 20%;
+  // margin: 0 0 0 20%;
   width: 100%;
+  margin-left: 20%;
+  margin-right: 20%;
+
 
   &__wrapper {
-    margin: 10px 0px 32px 160px;
-    width: 100%;
+    // margin: 10px 0px 32px 160px;
+    margin-left: 3%;
+    width: 97%;
   }
   .charts {
     display: flex;
     flex-direction: column;
     &__sales {
       display: flex;
-      justify-content: space-evenly;
-      margin-top: 40px 0px 0px 0px;
+      justify-content: space-between;
+      // margin: 30px 5%;
+      margin-left: 10%;
 
       &__progressbar {
         display: flex;
@@ -32,7 +37,8 @@
     &__wrapper {
       display: grid;
       grid-template-columns: 1fr;
-      margin-left: 40px;
+  
+      // margin-left: 40px;
       &__tabs {
         width: 350px;
         align-items: center;
@@ -46,9 +52,10 @@
       margin-left: auto;
 
       &__sales {
-        margin: 100px 10px 10px 0px;
+        margin: -50% 10px 10px 0px;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         width: 300px;
         height: 300px;
       }
@@ -57,6 +64,11 @@
 }
 @media only screen and (max-width: 480px) {
   .Content {
-    width: 150px;
+    width: auto;
+
+    &__wrapper {
+      position: relative;
+      margin-right: 10% !important;
+    }
   }
 }
