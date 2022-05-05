@@ -1,12 +1,16 @@
 .Content__wrapper__tabs {
   display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  // margin-left: -35px;
 
   @media (max-width: 768px) {
     flex-direction: row;
     width: 100%;
-    margin-left: 100px;
+    // margin-left: 100px;
     .Content__wrapper__tabs__right {
-      margin-left: -115px;
+      // margin-left: -115px;
       &__in {
         font-size: 15px;
         &__one {
@@ -37,8 +41,8 @@
     }
   }
   &__left {
-    margin-left: -80px;
-    margin-right: 80px;
+    // margin-left: -80px;
+    // margin-right: 80px;
     h2 {
       font-weight: bold;
     }
@@ -52,12 +56,12 @@
     flex-basis: 50%;
   }
   &__right {
-    margin-left: -80px;
+    // margin-left: -80px;
     &__in {
       margin-bottom: 20px;
       font-size: medium;
       font-weight: bolder;
-      margin-right: 70px;
+      // margin-right: 70px;
       &__one {
         text-align: center;
         padding: 15px 25px;
@@ -96,14 +100,17 @@
   }
 }
 @media only screen and (max-width: 480px) {
+
   .Content__wrapper__tabs {
     margin-top: 50px;
     justify-content: space-between;
+    // margin-left: 10%;
     &__left {
       margin-right: 150px;
     }
     &__right {
       margin-left: 20px;
+      margin-right: 5%;
     }
   }
 }

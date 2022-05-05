@@ -5,7 +5,7 @@ const BarDescription = () => {
   return (
     <div className={styles.Content__wrapper__tabs}>
       <div className={styles.Content__wrapper__tabs__left}>
-        <h2>chash flow</h2>
+        <h2>cash flow</h2>
         <span>Past 12 months</span>
         <h1>$43,100</h1>
         <p>current cash balance</p>
